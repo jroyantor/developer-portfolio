@@ -1,5 +1,7 @@
 # Developer Portfolio
 
+![Portfolio HomePage](https://github.com/user-attachments/assets/079ef830-d608-4b46-8b1d-b09929250b00)
+
 A modern and customizable **developer portfolio website** built with **React, TypeScript, Tailwind CSS**.  
 The site is designed for showcasing your **projects, experience, education, and skills** in a clean and professional format.
 
