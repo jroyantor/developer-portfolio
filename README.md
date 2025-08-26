@@ -1,91 +1,116 @@
-# 🌐 Personal Developer Portfolio
+# Developer Portfolio
 
-A modern, elegant, and responsive portfolio website built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**. This portfolio showcases your projects, skills, experience, and educational background in a minimal and stylish way with full support for **dark and light modes**.
-
-![Screenshot](public/images/portfolio_ui.png)
-
----
-
-## ✨ Features
-
-- 🔄 Dark & Light mode with seamless toggle  
-- 🌀 Gravitational hover background animation  
-- 📂 Projects section with screenshots, tech stack, and live/code links  
-- 🎓 Education & 💼 Experience sections with hover effects  
-- 🚀 "Go to Top" floating button  
-- 🧪 Fully customizable component-based structure  
-- ⚡ Blazing fast build with Vite  
+A modern and customizable **developer portfolio website** built with **React, TypeScript, Tailwind CSS**.  
+The site is designed for showcasing your **projects, experience, education, and skills** in a clean and professional format.
 
 ---
 
-## 📁 Folder Structure
+## 🚀 Features
 
-![file structure](public/images/fstructure.PNG)
-
+- ⚡ **React + TypeScript** for robust and scalable code
+- 🎨 **Tailwind CSS** styling and UI components
+- 📂 Modular structure: easy to add or remove sections
+- 📝 Centralized data in config files (`src/data/`)
+- 📱 Fully responsive and mobile-friendly
+- 🌗 Light/Dark mode support
 
 ---
 
-## 🚀 Installation & Setup
+## 📦 Installation
 
-### 1. Clone the repository
-
-```bash
-> git clone https://github.com/your-username/your-portfolio.git
-```
-### 2. Goto the project folder
-```bash
-> cd your-portfolio
-```
-
-### 3. Install dependencies
-```bash
-> npm install
-```
-### 4. Run the project
-```
-> npm run dev
-
-```
-
-Open your browser and visit http://localhost:5173
-
-
-### ⚙️ Customization Guide
-
-### 🔧 Update Portfolio Content
-
--  All data is stored in the App.tsx file's as text/dictionary.
-
-- projects: Add your projects with title, image, description, links, and stack.
-
-- skills: Define skills in frontend/backend/others categories.
-
-- experience, education: Define your career and academic background.
-
-### 🎨 Styling and Themes
-
-- Tailwind CSS is used for styling. Modify styles in tailwind.config.ts.
-
-- Dark/light mode is handled using a tailwind utility classes.
-
-- Component classes (text-cyan-400, etc.) define theme colors — customize as needed.
-
-
-### 🛠 Build for Production
+1. **Clone the repository**
 
 ```bash
-npm run build
+    git clone https://github.com/jroyantor/developer-portfolio.git
+    
+    cd portfolio
 ```
 
-### To preview the production build locally:
+2. **Install dependencies**
 
 ```bash
-npm run preview
+    npm install
+    # or
+    yarn install
+```
+3. **Run development server**
+
+```bash
+    npm run dev
+    # or
+    yarn dev
 ```
 
-### 📃 License
-
-This project is licensed under the [MIT License](https://opensource.org/license/mit).
+The site will be available at http://localhost:5173/ (default Vite port).
 
 
-### Designed with ❤️ by jroyantor.
+## 🔧 Customization
+
+All site content is managed via configuration files inside the src/data/ folder.
+Example structure:
+
+```bash
+    src/
+    ├─ components/     # UI components
+    ├─ data/           # Config files (modify these for your content)
+    │   ├─ experience.ts
+    │   ├─ education.ts
+    │   ├─ projects.ts
+    │   ├─ skills.ts
+    │   └─ about.ts
+    |   |_ contact.tsx
+    ├─ pages/          # Page components
+    └─ App.tsx
+```
+
+Steps to modify content:
+
+    Experience → src/data/experience.ts
+
+    Education → src/data/education.ts
+
+    Projects → src/data/projects.ts
+
+    Skills → src/data/skills.ts
+
+    About → src/data/about.ts
+
+    Contact → src/data/contact.tsx
+
+Each file exports an array/object that is directly consumed by the section components.
+Simply edit the data and the site will update.
+
+
+## 📂 Deployment
+
+This project is built with Vite
+
+and can be deployed on:
+
+- [Vercel](https://vercel.com/)
+
+- [Netlify](https://www.netlify.com/)
+
+- GitHub Pages
+
+Any static hosting provider
+
+To build for production:
+
+```bash
+ npm run build
+```
+
+This will output static files into the dist/ folder, which can be deployed.
+
+
+## 📝 License
+
+This project is licensed under the **MIT License**.
+You are free to use, modify, and distribute it for personal or commercial purposes.
+
+## ✨ Credits
+
+Built with ❤️ using React, TypeScript, Tailwind CSS.
+Inspired by modern portfolio best practices and optimized for easy customization.
+
